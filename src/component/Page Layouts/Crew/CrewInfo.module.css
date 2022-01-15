@@ -1,0 +1,70 @@
+.contents img {
+  width: 100%;
+  border-bottom: 0.1px solid grey;
+}
+
+.dots {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.dots div {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: grey;
+}
+
+.dots div:hover {
+  background: #fff;
+}
+
+.dots div:active {
+  background: #fff;
+}
+
+.crew_info h3 {
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+.crew_info h2 {
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.crew_info p {
+  color: #fff;
+  line-height: 1.6;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1024px) {
+  .contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .contents img {
+    order: 2;
+    max-width: 400px;
+    border-bottom: none;
+  }
+
+  .content {
+    text-align: left;
+    align-self: center;
+  }
+
+  .dots div {
+    justify-content: start;
+  }
+}

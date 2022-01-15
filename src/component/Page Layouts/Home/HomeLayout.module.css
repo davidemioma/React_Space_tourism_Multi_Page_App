@@ -1,0 +1,77 @@
+.home {
+  background: url(../../../assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: bottom, center;
+}
+
+.content {
+  display: grid;
+  justify-items: center;
+  gap: 5rem;
+}
+
+.space {
+  text-align: center;
+  color: #fff;
+}
+
+.space h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.space h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.space p {
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.circle {
+  width: 60%;
+  height: 270px;
+  background: #fff;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+  .home {
+    background: url(../../../assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    background: url(../../../assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .space {
+    text-align: left;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
+  }
+}

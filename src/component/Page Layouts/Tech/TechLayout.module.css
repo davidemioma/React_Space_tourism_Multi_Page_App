@@ -1,0 +1,39 @@
+.tech {
+  background: url(../../../assets/technology/background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.title span {
+  color: gray;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tech {
+    background: url(../../../assets/technology/background-technology-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tech {
+    background: url(../../../assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    text-align: left;
+  }
+}

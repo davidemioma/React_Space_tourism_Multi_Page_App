@@ -1,0 +1,36 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  backdrop-filter: blur(50px);
+  z-index: 10;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  padding: 4rem 2.5rem;
+}
+
+.modal img {
+  margin-left: 90%;
+}
+
+.modal ul {
+  margin-top: 10rem;
+  list-style: none;
+  display: grid;
+  gap: 5rem;
+}
+
+.modal ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.modal ul a span {
+  margin-right: 1rem;
+  font-weight: 700;
+}

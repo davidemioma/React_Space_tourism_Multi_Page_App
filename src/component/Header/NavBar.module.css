@@ -1,0 +1,46 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 5rem 2rem;
+  margin: 0 auto;
+}
+
+.navBar ul {
+  list-style: none;
+  gap: 2rem;
+  backdrop-filter: blur(20px);
+  padding: 3rem 4rem;
+  display: none;
+}
+
+.navBar ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding-bottom: 3rem;
+}
+
+.navBar a span {
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.navBar a:hover,
+.navBar a:active,
+.navBar a.active {
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .toggler {
+    display: none;
+  }
+
+  .navBar ul {
+    display: flex;
+  }
+}
