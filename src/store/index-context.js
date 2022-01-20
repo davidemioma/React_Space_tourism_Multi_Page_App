@@ -14,6 +14,8 @@ export const IndexContextProviders = (props) => {
     crewsData: crew,
   };
 
+  console.log(technology);
+
   return (
     <IndexContext.Provider value={contextValue}>
       {props.children}

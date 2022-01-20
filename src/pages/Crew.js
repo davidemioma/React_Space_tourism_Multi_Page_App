@@ -2,10 +2,6 @@ import CrewLayout from "../component/Page Layouts/Crew/CrewLayout";
 import CrewInfo from "../component/Page Layouts/Crew/CrewInfo";
 import { useState, useContext } from "react";
 import IndexContext from "../store/index-context";
-import imgAnoushe from "../assets/crew/image-anousheh-ansari.png";
-import imgDouglas from "../assets/crew/image-douglas-hurley.png";
-import imgMark from "../assets/crew/image-mark-shuttleworth.png";
-import imgVictor from "../assets/crew/image-victor-glover.png";
 
 function Crew() {
   const crewCTX = useContext(IndexContext);
@@ -25,23 +21,11 @@ function Crew() {
 
   const crew = crewCTX.crewsData[index];
 
-  let imgName;
-
-  if (index === 0) {
-    imgName = imgAnoushe;
-  } else if (index === 1) {
-    imgName = imgDouglas;
-  } else if (index === 2) {
-    imgName = imgMark;
-  } else {
-    imgName = imgVictor;
-  }
-
   return (
     <CrewLayout>
       <CrewInfo
         onIndexValue={getIndexValue}
-        image={imgName}
+        image={crew.images.png}
         role={crew.role}
         name={crew.name}
         bio={crew.bio}

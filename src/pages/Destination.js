@@ -2,10 +2,6 @@ import DestinationLayout from "../component/Page Layouts/Destination/DestLayout"
 import DestinationHeader from "../component/Page Layouts/Destination/DestHeader";
 import { useContext, useState } from "react";
 import IndexContext from "../store/index-context";
-import moonImg from "../assets/destination/image-moon.png";
-import marsImg from "../assets/destination/image-mars.png";
-import europaImg from "../assets/destination/image-europa.png";
-import titanImg from "../assets/destination/image-titan.png";
 
 function Destination() {
   const destCtx = useContext(IndexContext);
@@ -27,23 +23,11 @@ function Destination() {
 
   const planet = destCtx.destinationsData[index];
 
-  let imgName;
-
-  if (index === 0) {
-    imgName = moonImg;
-  } else if (index === 1) {
-    imgName = marsImg;
-  } else if (index === 2) {
-    imgName = europaImg;
-  } else {
-    imgName = titanImg;
-  }
-
   return (
     <DestinationHeader onfilterValue={getFilterValue}>
       {index >= 0 && (
         <DestinationLayout
-          image={imgName}
+          image={planet.images.webp}
           name={planet.name}
           description={planet.description}
           distance={planet.distance}
