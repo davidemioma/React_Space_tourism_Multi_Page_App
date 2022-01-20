@@ -22,9 +22,10 @@ function Tech() {
 
   if (indexValue === "") {
     index = 0;
-  } else index = techCTX.techs.findIndex((tech) => tech.index === +indexValue);
+  } else
+    index = techCTX.techsData.findIndex((tech) => tech.index === +indexValue);
 
-  const tech = techCTX.techs[index];
+  const tech = techCTX.techsData[index];
 
   let imgName, portrait;
 

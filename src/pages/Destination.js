@@ -21,9 +21,11 @@ function Destination() {
   if (filterValue === "") {
     index = 0;
   } else
-    index = destCtx.destinations.findIndex((dest) => dest.name === filterValue);
+    index = destCtx.destinationsData.findIndex(
+      (dest) => dest.name === filterValue
+    );
 
-  const planet = destCtx.destinations[index];
+  const planet = destCtx.destinationsData[index];
 
   let imgName;
 

@@ -20,9 +20,10 @@ function Crew() {
 
   if (indexValue === "") {
     index = 0;
-  } else index = crewCTX.crews.findIndex((crew) => crew.index === +indexValue);
+  } else
+    index = crewCTX.crewsData.findIndex((crew) => crew.index === +indexValue);
 
-  const crew = crewCTX.crews[index];
+  const crew = crewCTX.crewsData[index];
 
   let imgName;
 
